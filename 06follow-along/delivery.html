@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="description" content="Get your next meal delivered by drone.">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="delivery.css">
+    
+    <meta charset="UTF-8">
+    <title>Drone Delivery Services LLC.</title>
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <span>Drone Delivery </span>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li class="active"><a href="delivery.html">Request a Delivery</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Request a Delivery</h1>
+        <p class="form-intro">Ready for takeoff? Tell us a little about your package and we’ll get it on its way!</p>
+     
+        <form method="get" class="form" action="thanks.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="fname">First Name*</label>
+                <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+                <label for="lname">Last Name*</label>
+                <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+                <label for="phone">Cell Number*</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g., 555-123-4567" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>What's in the Package?</legend>
+                <label for="package-type">Package type</label>
+                <select id="package-type" name="package-type">
+                    <option value="">Choose one</option>
+                    <option value="meal">A meal</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="documents">Important documents</option>
+                    <option value="care-package">A care package</option>
+                    <option value="other">Something else</option>
+                </select>
+                <label for="package-weight">Approximate package weight (lbs)</label>
+                <input type="number" id="package-weight" name="package-weight" min="0.1" max="50" step="0.1" placeholder="e.g., 2.5">
+            </fieldset>
+
+            <fieldset>
+                <legend>Gift Options</legend>
+                <label class="check-label">
+                    <input type="checkbox" name="is-gift" value="yes">
+                    This delivery is a surprise gift
+                </label>
+                <label for="gift-color">Choose a gift-wrap color</label>
+                <input type="color" id="gift-color" name="gift-color" value="#43a0b6">
+                <label for="gift-message">Add a note to include</label>
+                <textarea id="gift-message" name="gift-message" rows="3" placeholder="Your message here..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery Updates</legend>
+                <span class="form-label">How would you like delivery updates?</span>
+                <label class="check-label">
+                    <input type="radio" name="updates" value="text" checked>
+                    Text me
+                </label>
+                <label class="check-label">
+                    <input type="radio" name="updates" value="email">
+                    Email me
+                </label>
+                <label for="email">Email address (if choosing email updates)</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+                <label class="check-label">
+                    <input type="radio" name="updates" value="none">
+                    No updates, thanks
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pick Your Time</legend>
+                <label for="time-window">Ideal time of day</label>
+                <select id="time-window" name="time-window">
+                    <option value="">Any time works</option>
+                    <option value="morning">Morning (8 a.m.–noon)</option>
+                    <option value="afternoon">Afternoon (noon–5 p.m.)</option>
+                    <option value="evening">Evening (5–8 p.m.)</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <label for="special-instructions">What should we know about your delivery?</label>
+                <textarea id="special-instructions" name="special-instructions" rows="4" placeholder="Any special handling or other details"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Send Delivery Request">
+        </form>
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy;202X &bull; Drone Delivery Services &bull; <a href="mailto:zen@gmail.com">Email Us</a> </p>
+    </footer>
+</body>
+</html>
