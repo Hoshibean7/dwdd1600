@@ -1,0 +1,264 @@
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    font-size: 16px;
+}
+/* header stuff here */
+header {
+    
+    padding: 1rem 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #9c3335;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+header p {
+    margin: 0;
+    color: #051522;
+    font-size: 1.22rem;
+    letter-spacing: 2px;
+}
+
+/* navigation stuff here */
+nav {
+    background-color: #051522;
+}
+nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: .95rem 1rem .83rem 1rem;
+    font-size: .8rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav .active a {
+    background-color: #9c3335;
+    color: #ffffff;
+}
+nav a:hover {
+    background-color: #43a0b6;
+}
+
+
+/* main stuff here */
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #9c3335;
+    font-size: 2.5rem;
+    margin: .5rem 0 .8rem 0;
+}
+.form-intro {
+    color: #051522;
+    font-size: 1.05rem;
+    max-width: 42rem;
+}
+main h2 {
+    color: #5c3a2e;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #2f3133;
+    margin: 0 0 .8rem 0;
+    line-height: 150%
+}
+main a {
+    color: #9c3335;
+}
+
+.wrapimage {
+    width: 50%;
+    margin: 0;
+    float: right;
+    margin-left: 2vw;
+}
+.wrapimage img {
+    width: 100%;
+    height: auto;
+}
+.wrapimage figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.form {
+    background: linear-gradient(145deg, #f0f9fb, #fff8f4);
+    border: 1px solid #d5e9ed;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(5, 21, 34, .1);
+    box-sizing: border-box;
+    max-width: 42rem;
+    padding: 1.25rem;
+}
+.form fieldset {
+    background-color: rgba(255, 255, 255, .88);
+    border: 1px solid #c9e1e6;
+    border-left: 5px solid #43a0b6;
+    border-radius: .6rem;
+    margin: 0 0 1.1rem;
+    padding: 1rem 1.1rem;
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+.form fieldset:hover {
+    box-shadow: 0 4px 12px rgba(5, 21, 34, .08);
+    transform: translateY(-2px);
+}
+.form fieldset:nth-of-type(3n + 2) {
+    border-left-color: #9c3335;
+}
+.form legend {
+    background-color: #ffffff;
+    border: 1px solid #d5e9ed;
+    border-radius: 2rem;
+    color: #17677b;
+    font-weight: 500;
+    font-size: .9rem;
+    padding: .25rem .7rem;
+}
+.form label,
+.form .form-label {
+    color: #263b46;
+    display: block;
+    font-weight: 500;
+    margin: .65rem 0 .35rem;
+}
+.form input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+.form select,
+.form textarea {
+    box-sizing: border-box;
+    display: block;
+    font: inherit;
+    margin-bottom: .5rem;
+    max-width: 100%;
+    padding: .65rem .75rem;
+    width: 100%;
+}
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form input[type="number"],
+.form select,
+.form textarea {
+    background-color: #ffffff;
+    border: 1px solid #aabdc3;
+    border-radius: .55rem;
+    color: #172a33;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+.form input[type="text"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="email"]:focus,
+.form input[type="number"]:focus,
+.form select:focus,
+.form textarea:focus {
+    border-color: #43a0b6;
+    box-shadow: 0 0 0 3px rgba(67, 160, 182, .2);
+    outline: none;
+}
+.form input[type="color"] {
+    background-color: #ffffff;
+    border: 1px solid #aabdc3;
+    border-radius: .5rem;
+    cursor: pointer;
+    height: 2.5rem;
+    padding: .2rem;
+    width: 4rem;
+}
+.form textarea {
+    min-height: 6rem;
+    resize: vertical;
+}
+.form :required {
+    background-color: #fff8f7;
+}
+.form input[type="checkbox"],
+.form input[type="radio"] {
+    accent-color: #9c3335;
+    height: 1.1rem;
+    width: 1.1rem;
+}
+.form .check-label {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    margin: .45rem 0;
+    font-weight: 200;
+}
+.form input[type="submit"] {
+    background: linear-gradient(110deg, #43a0b6, #26798e);
+    border: 0;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 500;
+    margin: 1rem 0 0;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 0 #1d6070;
+    transition: background .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.form input[type="submit"]:hover {
+    background: linear-gradient(110deg, #9c3335, #762629);
+    box-shadow: 0 2px 0 #5b1b1e;
+    transform: translateY(2px);
+}
+.form input[type="submit"]:focus-visible {
+    outline: 3px solid #051522;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .form {
+        padding: .8rem;
+    }
+    .form fieldset {
+        padding: .8rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .form fieldset,
+    .form input[type="text"],
+    .form input[type="tel"],
+    .form input[type="email"],
+    .form input[type="number"],
+    .form select,
+    .form textarea,
+    .form input[type="submit"] {
+        transition: none;
+    }
+    .form fieldset:hover,
+    .form input[type="submit"]:hover {
+        transform: none;
+    }
+}
+
+
+/* footer stuff here */
+footer {
+    border-top: solid #ccc 2px;
+    text-align: center;
+    color: #024873;
+    font-size: .7rem;
+    padding: 1rem 0;
+    clear: both;
+}
+footer a {
+    color: #024873;
+}
